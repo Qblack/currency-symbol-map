@@ -6,6 +6,6 @@ function mapSymbol(currencyCode) {
   if (map.hasOwnProperty(currencyCode)) {
     return map[currencyCode]
   } else {
-    return '?'
+    return currencyCode.concat(' ');
   }
 }
